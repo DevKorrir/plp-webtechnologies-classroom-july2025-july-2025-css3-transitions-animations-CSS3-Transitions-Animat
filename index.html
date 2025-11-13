@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Web Page Assignment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Web Experience</h1>
+        <p>Combining CSS3 Animations with JavaScript Functions</p>
+    </header>
+
+    <main class="container">
+        <section class="section">
+            <h2>Part 1: CSS Dynamics</h2>
+            <div class="animation-demos">
+                <div class="demo-item">
+                    <h3>Button Hover Effects</h3>
+                    <button class="hover-button">Smooth Transition Button</button>
+                    <button class="hover-button secondary">Secondary Button</button>
+                </div>
+                
+                <div class="demo-item">
+                    <h3>Continuous Animation</h3>
+                    <div class="pulsing-box">Continuous Pulse</div>
+                </div>
+                
+                <div class="demo-item">
+                    <h3>Transform Animation</h3>
+                    <div class="transform-box">Hover Me</div>
+                </div>
+                
+                <div class="demo-item">
+                    <h3>Fade Animation</h3>
+                    <div class="fade-box">Fade In</div>
+                </div>
+            </div>
+        </section>
+        
+        <hr>
+
+        <section class="section">
+            <h2>Part 2: JS Functions & Scope</h2>
+            <div id="function-output" class="output-box">
+                <p><strong>Calculated Area:</strong> <span id="area-result">...</span></p>
+                <p><strong>Global Scope Check:</strong> <span id="global-check">...</span></p>
+                <p><strong>String Manipulation:</strong> <span id="string-result">...</span></p>
+                <p><strong>Math Operation:</strong> <span id="math-result">...</span></p>
+            </div>
+            <div class="button-group">
+                <button id="calculate-btn" class="action-btn">Run Calculations</button>
+                <button id="string-btn" class="action-btn">String Functions</button>
+                <button id="math-btn" class="action-btn">Math Functions</button>
+            </div>
+        </section>
+        
+        <hr>
+
+        <section class="section">
+            <h2>Part 3: JS Triggers CSS</h2>
+            <div class="js-trigger-container">
+                <div class="demo-item">
+                    <h3>Animation Trigger</h3>
+                    <div id="target-box" class="animated-box">Click the Button!</div>
+                    <button id="trigger-animation-btn" class="action-btn">Animate Box</button>
+                </div>
+                
+                <div class="demo-item">
+                    <h3>Card Flip</h3>
+                    <div class="card-container">
+                        <div class="card" id="flip-card">
+                            <div class="card-front">Front</div>
+                            <div class="card-back">Back</div>
+                        </div>
+                    </div>
+                    <button id="flip-card-btn" class="action-btn">Flip Card</button>
+                </div>
+                
+                <div class="demo-item">
+                    <h3>Loader Control</h3>
+                    <div class="loader" id="loader"></div>
+                    <div class="button-group">
+                        <button id="start-loader-btn" class="action-btn">Start Loader</button>
+                        <button id="stop-loader-btn" class="action-btn">Stop Loader</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal-control">
+                <button id="open-modal-btn" class="action-btn">Open Slide-in Modal</button>
+            </div>
+        </section>
+    </main>
+
+    <div id="my-modal" class="modal-backdrop">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3>Animated Popup</h3>
+            <p>This modal slides in and fades with a single class added by JavaScript.</p>
+            <p>It demonstrates how JavaScript can trigger complex CSS animations.</p>
+            <button id="close-modal-btn" class="action-btn">Close Modal</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>Interactive Web Experience &copy; 2023</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
